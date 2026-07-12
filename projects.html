@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "on-surface-variant": "#44474e",
+                            "secondary-fixed": "#dce1ff",
+                            "on-secondary-fixed-variant": "#264191",
+                            "error-container": "#ffdad6",
+                            "on-primary": "#ffffff",
+                            "inverse-primary": "#b1c7f2",
+                            "secondary-fixed-dim": "#b6c4ff",
+                            "tertiary": "#000000",
+                            "surface-dim": "#dbd9dd",
+                            "inverse-surface": "#303033",
+                            "primary": "#000000",
+                            "background": "#faf9fc",
+                            "secondary-container": "#8fa7fe",
+                            "surface-container-highest": "#e3e2e5",
+                            "on-tertiary-fixed-variant": "#6b3a24",
+                            "on-tertiary-fixed": "#351001",
+                            "on-error": "#ffffff",
+                            "on-tertiary": "#ffffff",
+                            "on-background": "#1b1b1e",
+                            "surface-container": "#efedf1",
+                            "primary-container": "#001b3d",
+                            "on-primary-fixed-variant": "#31476b",
+                            "primary-fixed-dim": "#b1c7f2",
+                            "surface-variant": "#e3e2e5",
+                            "on-tertiary-container": "#b2755b",
+                            "surface-container-high": "#e9e7eb",
+                            "on-secondary-container": "#1d3989",
+                            "surface": "#faf9fc",
+                            "surface-bright": "#faf9fc",
+                            "on-secondary": "#ffffff",
+                            "on-surface": "#1b1b1e",
+                            "error": "#ba1a1a",
+                            "inverse-on-surface": "#f2f0f3",
+                            "on-secondary-fixed": "#00164e",
+                            "on-primary-container": "#6f84ac",
+                            "surface-tint": "#495f84",
+                            "on-error-container": "#93000a",
+                            "tertiary-fixed": "#ffdbcd",
+                            "tertiary-container": "#351001",
+                            "surface-container-low": "#f5f3f6",
+                            "on-primary-fixed": "#001b3d",
+                            "tertiary-fixed-dim": "#fdb698",
+                            "surface-container-lowest": "#ffffff",
+                            "primary-fixed": "#d6e3ff",
+                            "outline-variant": "#c4c6cf",
+                            "outline": "#74777f",
+                            "secondary": "#4059aa"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "stack-md": "24px",
+                            "margin-mobile": "16px",
+                            "margin-desktop": "48px",
+                            "unit": "4px",
+                            "gutter": "24px",
+                            "container-max": "1280px",
+                            "stack-sm": "8px",
+                            "stack-lg": "48px"
+                        },
+                        "fontFamily": {
+                            "body-lg": ["Inter"],
+                            "mono-technical": ["Geist"],
+                            "headline-md": ["Geist"],
+                            "body-md": ["Inter"],
+                            "display-lg": ["Geist"],
+                            "label-caps": ["Geist"],
+                            "display-lg-mobile": ["Geist"]
+                        },
+                        "fontSize": {
+                            "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                            "mono-technical": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                            "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400"}],
+                            "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                            "display-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    </script>
+<meta charset="utf-8"/>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm h-20 transition-all duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-full">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md font-bold text-primary-container">Kailas Pathi Kaki</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="home.html">Home</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="experience.html">Experience</a>
+<a class="font-body-md text-body-md font-medium text-secondary border-b-2 border-secondary pb-1" href="#">Skills/Projects</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="publications.html">Publications</a>
+</div>
+<a class="bg-primary-container text-on-primary px-6 py-2.5 rounded-lg font-body-md font-medium hover:scale-105 transition-transform duration-200 inline-block" href="https://drive.google.com/file/d/1JFdMNmpVtZ5wkySgslmR7UsQdAYpyArM/view?usp=drive_link" target="_blank">Download Resume</a>
+</div>
+</nav>
+<main class="pt-32 pb-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Header Section -->
+<header class="mb-stack-lg max-w-3xl">
+<h1 class="font-display-lg text-display-lg mb-4">Technical Expertise &amp; Architectures</h1>
+<p class="text-on-surface-variant text-body-lg font-body-lg">
+                Engineered for scalability and precision. From cloud-native data migrations to AI-driven performance optimization, here is the technical stack I leverage to solve high-stakes data challenges.
+            </p>
+</header>
+<!-- Skills Grid -->
+<section class="mb-24">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'opsz' 32">architecture</span>
+<h2 class="font-headline-md text-headline-md">Core Competencies</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Technologies Card -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 hover:shadow-lg transition-all">
+<label class="font-label-caps text-label-caps text-secondary mb-4 block">Core Technologies</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">database</span>
+</div>
+<div>
+<p class="font-body-md font-semibold">Data Warehousing</p>
+<p class="text-sm text-on-surface-variant">Architecture &amp; Strategy</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">account_tree</span>
+</div>
+<div>
+<p class="font-body-md font-semibold">Data Modeling</p>
+<p class="text-sm text-on-surface-variant">High-Volume Pipelines</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">science</span>
+</div>
+<div>
+<p class="font-body-md font-semibold">Data Science</p>
+<p class="text-sm text-on-surface-variant">ML Ops &amp; Analytics</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">cloud</span>
+</div>
+<div>
+<p class="font-body-md font-semibold">AWS Ecosystem</p>
+<p class="text-sm text-on-surface-variant">S3, Redshift, Lambda</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Languages Card -->
+<div class="md:col-span-4 bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 hover:shadow-lg transition-all">
+<label class="font-label-caps text-label-caps text-secondary mb-4 block">Languages</label>
+<div class="space-y-4">
+<div class="flex justify-between items-center p-3 bg-surface-container-low rounded-xl">
+<span class="font-mono-technical">SQL</span>
+<span class="text-xs font-semibold px-2 py-0.5 bg-primary-fixed text-on-primary-fixed rounded">EXPERT</span>
+</div>
+<div class="flex justify-between items-center p-3 bg-surface-container-low rounded-xl">
+<span class="font-mono-technical">Python</span>
+<span class="text-xs font-semibold px-2 py-0.5 bg-primary-fixed text-on-primary-fixed rounded">ADVANCED</span>
+</div>
+<div class="flex justify-between items-center p-3 bg-surface-container-low rounded-xl">
+<span class="font-mono-technical">Shell Scripting</span>
+<span class="text-xs font-semibold px-2 py-0.5 bg-surface-container-highest text-on-surface-variant rounded">PROFICIENT</span>
+</div>
+</div>
+</div>
+<!-- AI Models Card -->
+<div class="md:col-span-6 bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 hover:shadow-lg transition-all">
+<label class="font-label-caps text-label-caps text-secondary mb-4 block">AI &amp; LLM Models</label>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-xl bg-secondary-fixed text-on-secondary-fixed-variant font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">psychology</span> OpenAI (GPT-4)
+                        </span>
+<span class="px-4 py-2 rounded-xl bg-secondary-fixed text-on-secondary-fixed-variant font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">auto_awesome</span> Claude (Anthropic)
+                        </span>
+<span class="px-4 py-2 rounded-xl bg-secondary-fixed text-on-secondary-fixed-variant font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">terminal</span> Ollama (Local LLMs)
+                        </span>
+</div>
+</div>
+<!-- Databases Card -->
+<div class="md:col-span-6 bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 hover:shadow-lg transition-all">
+<label class="font-label-caps text-label-caps text-secondary mb-4 block">Enterprise Databases</label>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg border border-outline-variant text-body-md">Teradata</span>
+<span class="px-3 py-1.5 rounded-lg border border-outline-variant text-body-md">Greenplum</span>
+<span class="px-3 py-1.5 rounded-lg border border-outline-variant text-body-md">Oracle</span>
+<span class="px-3 py-1.5 rounded-lg border border-outline-variant text-body-md">Vertica</span>
+<span class="px-3 py-1.5 rounded-lg border border-outline-variant text-body-md">AWS Redshift</span>
+</div>
+</div>
+<!-- Tools Card -->
+<div class="md:col-span-12 bg-primary-container text-on-primary rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-8">
+<div>
+<label class="font-label-caps text-label-caps text-primary-fixed-dim mb-2 block">Modern Engineering Stack</label>
+<h3 class="font-headline-md text-2xl">AI-Assisted Development Tools</h3>
+</div>
+<div class="flex gap-4">
+<div class="px-6 py-3 bg-white/10 backdrop-blur rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">air</span>
+<span class="font-mono-technical text-lg">Windsurf</span>
+</div>
+<div class="px-6 py-3 bg-white/10 backdrop-blur rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">ads_click</span>
+<span class="font-mono-technical text-lg">Cursor</span>
+</div>
+<div class="px-6 py-3 bg-white/10 backdrop-blur rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">smart_toy</span>
+<span class="font-mono-technical text-lg">Copilot</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="mb-24">
+<div class="flex items-center justify-between mb-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'opsz' 32">assignment</span>
+<h2 class="font-headline-md text-headline-md">Featured Projects</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<div class="group relative bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-secondary transition-all hover:shadow-xl">
+<div class="aspect-video bg-surface-container flex items-center justify-center p-8">
+<div class="text-center">
+<span class="material-symbols-outlined text-6xl text-secondary/40 mb-4">monitoring</span>
+<p class="font-label-caps text-on-surface-variant opacity-60">Visual Mockup: AI Performance Dashboard</p>
+</div>
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-[10px] font-mono-technical uppercase tracking-wider text-on-secondary-fixed-variant">AI-Driven BI</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-[10px] font-mono-technical uppercase tracking-wider text-on-secondary-fixed-variant">DELL</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-4">Marketing BI Optimization</h3>
+<p class="text-on-surface-variant text-body-md mb-6">Revolutionized reporting speed for Dell's marketing division using AI-driven caching and query optimization strategies, achieving 10x faster insights.</p>
+<a class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            PROJECT CASE STUDY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-secondary transition-all hover:shadow-xl">
+<div class="aspect-video bg-surface-container flex items-center justify-center p-8">
+<div class="text-center">
+<span class="material-symbols-outlined text-6xl text-secondary/40 mb-4">cloud_sync</span>
+<p class="font-label-caps text-on-surface-variant opacity-60">Visual Mockup: Cloud Migration Roadmap</p>
+</div>
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-[10px] font-mono-technical uppercase tracking-wider text-on-secondary-fixed-variant">AWS MIGRATION</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-[10px] font-mono-technical uppercase tracking-wider text-on-secondary-fixed-variant">MassMutual</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-4">Teradata Sunset Program</h3>
+<p class="text-on-surface-variant text-body-md mb-6">Led the complex migration of legacy Teradata infrastructure to AWS, ensuring zero data loss and significant cost reduction for MassMutual.</p>
+<a class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            VIEW ARCHITECTURE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-secondary transition-all hover:shadow-xl">
+<div class="aspect-video bg-surface-container flex items-center justify-center p-8">
+<div class="text-center">
+<span class="material-symbols-outlined text-6xl text-secondary/40 mb-4">speed</span>
+<p class="font-label-caps text-on-surface-variant opacity-60">Visual Mockup: Performance Tuning Analytics</p>
+</div>
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-[10px] font-mono-technical uppercase tracking-wider text-on-secondary-fixed-variant">TUNING</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-[10px] font-mono-technical uppercase tracking-wider text-on-secondary-fixed-variant">HFI</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-4">HFI Data Analytics Performance</h3>
+<p class="text-on-surface-variant text-body-md mb-6">Engineered high-performance data models and query tuning protocols for HFI, reducing processing latency by 60% across core analytics workloads.</p>
+<a class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            TECHNICAL DETAILS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group relative bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-secondary transition-all hover:shadow-xl">
+<div class="aspect-video bg-surface-container flex items-center justify-center p-8">
+<div class="text-center">
+<span class="material-symbols-outlined text-6xl text-secondary/40 mb-4">shopping_cart</span>
+<p class="font-label-caps text-on-surface-variant opacity-60">Visual Mockup: Amazon Business Data Flow</p>
+</div>
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-[10px] font-mono-technical uppercase tracking-wider text-on-secondary-fixed-variant">REDSHIFT</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-[10px] font-mono-technical uppercase tracking-wider text-on-secondary-fixed-variant">AMAZON</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-4">Amazon Business Migration</h3>
+<p class="text-on-surface-variant text-body-md mb-6">Architected and executed a large-scale data migration to Redshift for Amazon Business, enabling real-time procurement analytics at scale.</p>
+<a class="text-primary font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            PROJECT SCOPE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container-low rounded-3xl p-12 text-center relative overflow-hidden border border-outline-variant/20">
+<div class="relative z-10">
+<h2 class="font-display-lg text-display-lg mb-6">Let's Build the Future of Data</h2>
+<p class="text-on-surface-variant text-body-lg mb-8 max-w-2xl mx-auto">
+                    Looking for a Data Architect to design your next scalable AI infrastructure? I'm available for strategic consulting and technical leadership.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-primary-container text-on-primary px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-all shadow-lg text-center" href="mailto:kk.pathi@gmail.com">Get In Touch</a>
+<a class="bg-surface text-primary border border-outline-variant px-8 py-4 rounded-xl font-semibold hover:bg-surface-container transition-all inline-block" href="https://drive.google.com/file/d/1JFdMNmpVtZ5wkySgslmR7UsQdAYpyArM/view?usp=drive_link" target="_blank">Download Portfolio PDF</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-stack-lg border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-6 md:mb-0">
+<span class="font-label-caps text-label-caps tracking-widest text-primary">KAILAS PATHI KAKI</span>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2 opacity-80">© 2024 Data Architect. Engineered for Precision.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="https://www.linkedin.com/in/kailas-pathi-k-12935b48">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="mailto:kk.pathi@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        // Sticky header effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('h-16', 'bg-surface/95');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.remove('h-16', 'bg-surface/95');
+                nav.classList.add('h-20');
+            }
+        });
+    </script>
+</body></html>

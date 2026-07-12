@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Geist:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "on-surface-variant": "#44474e",
+                            "on-background": "#1b1b1e",
+                            "secondary-container": "#8fa7fe",
+                            "primary-fixed-dim": "#b1c7f2",
+                            "on-secondary-fixed-variant": "#264191",
+                            "background": "#faf9fc",
+                            "tertiary-fixed-dim": "#fdb698",
+                            "surface-dim": "#dbd9dd",
+                            "surface-container-low": "#f5f3f6",
+                            "surface-container-highest": "#e3e2e5",
+                            "surface-container-high": "#e9e7eb",
+                            "on-primary-fixed-variant": "#31476b",
+                            "secondary-fixed": "#dce1ff",
+                            "on-primary": "#ffffff",
+                            "on-error": "#ffffff",
+                            "surface-container-lowest": "#ffffff",
+                            "on-primary-container": "#6f84ac",
+                            "on-tertiary-fixed-variant": "#6b3a24",
+                            "error": "#ba1a1a",
+                            "primary-fixed": "#d6e3ff",
+                            "on-tertiary-fixed": "#351001",
+                            "surface-bright": "#faf9fc",
+                            "outline": "#74777f",
+                            "on-tertiary": "#ffffff",
+                            "primary-container": "#001b3d",
+                            "tertiary-fixed": "#ffdbcd",
+                            "secondary": "#4059aa",
+                            "outline-variant": "#c4c6cf",
+                            "on-secondary-container": "#1d3989",
+                            "inverse-surface": "#303033",
+                            "surface": "#faf9fc",
+                            "on-secondary-fixed": "#00164e",
+                            "inverse-primary": "#b1c7f2",
+                            "error-container": "#ffdad6",
+                            "tertiary-container": "#351001",
+                            "on-secondary": "#ffffff",
+                            "secondary-fixed-dim": "#b6c4ff",
+                            "tertiary": "#000000",
+                            "inverse-on-surface": "#f2f0f3",
+                            "surface-container": "#efedf1",
+                            "on-primary-fixed": "#001b3d",
+                            "surface-variant": "#e3e2e5",
+                            "primary": "#000000",
+                            "on-tertiary-container": "#b2755b",
+                            "surface-tint": "#495f84",
+                            "on-surface": "#1b1b1e",
+                            "on-error-container": "#93000a"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "unit": "4px",
+                            "stack-sm": "8px",
+                            "stack-md": "24px",
+                            "margin-mobile": "16px",
+                            "margin-desktop": "48px",
+                            "container-max": "1280px",
+                            "stack-lg": "48px",
+                            "gutter": "24px"
+                        },
+                        "fontFamily": {
+                            "headline-md": ["Geist"],
+                            "mono-technical": ["Geist"],
+                            "label-caps": ["Geist"],
+                            "display-lg": ["Geist"],
+                            "body-lg": ["Inter"],
+                            "display-lg-mobile": ["Geist"],
+                            "body-md": ["Inter"]
+                        },
+                        "fontSize": {
+                            "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                            "mono-technical": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                            "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                            "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                            "display-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                            "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-primary-container/80 backdrop-blur-xl border-b border-white/20 dark:border-outline-variant/10 shadow-sm dark:shadow-none transition-all duration-300">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
+<div class="flex items-center gap-3">
+<span class="font-headline-md text-headline-md font-bold text-primary-container dark:text-secondary-fixed">Kailas Pathi Kaki</span>
+</div>
+<div class="hidden md:flex items-center gap-stack-md">
+<a class="font-body-md text-body-md font-medium text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="home.html">Home</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="experience.html">Experience</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="projects.html">Skills/Projects</a>
+<a class="font-body-md text-body-md font-medium text-secondary dark:text-secondary-fixed border-b-2 border-secondary pb-1" href="#">Publications</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-medium scale-102 transition-transform duration-200 ease-in-out hover:bg-on-surface-variant inline-block" href="https://drive.google.com/file/d/1JFdMNmpVtZ5wkySgslmR7UsQdAYpyArM/view?usp=drive_link" target="_blank">Download Resume</a>
+</nav>
+</header>
+<main class="pt-32 pb-stack-lg">
+<!-- Publications Hero & Showcase -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-stack-lg" id="publications">
+<div class="mb-12">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-2 block">Thought Leadership</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Authored Insights</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Bridging the gap between raw data and executive strategy through technical playbooks and architectural research.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-surface-container-low rounded-3xl p-12 relative overflow-hidden">
+<div class="lg:col-span-5 book-3d-container flex justify-center lg:justify-start">
+<div class="book-3d w-64 h-96 relative shadow-2xl">
+<img alt="AI Powered Data Architecture book cover" class="w-full h-full object-cover rounded-r-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_TkgHh4MQpJeareeI6qgXXDVv0uGmz2Sp1HYOom7okseq6Qn9xX5g-es4zNnsDp_hc29YdN-vd23H3ImWB3agMu6wGxDC2Wkf7Z5RUr9cqcrO4ZW7zGefBgMrulQdNSR2iQ84kk44EtCNFI1ksAlFlRf7ivUwxKgCw4XZDSmqv8M-mYUZnNXxFM3HlhuGtS2exmnQ1_jRZOYRfdx9rgbAF6p-R9dGGL7jC-DfqXbcHuqi3jV9PUw9RYTktCpmZeXZEJeTQSYkcw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent pointer-events-none rounded-r-md"></div>
+</div>
+</div>
+<div class="lg:col-span-7 z-10">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">Bestseller</span>
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">AI Powered Data Architecture</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        A definitive guide to designing scalable data ecosystems in the age of AI. This 60-day adoption playbook provides actionable frameworks for senior engineers and leadership teams looking to modernize their stack with AI-driven patterns.
+                    </p>
+<div class="flex flex-wrap gap-4">
+
+						
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all hover:scale-105 active:scale-95 shadow-md"   >
+<span class="material-symbols-outlined">shopping_cart</span>
+<a class="bg-primary text-on-primary px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-on-surface-variant transition-all shrink-0" href="https://rajeshwari-kaki89.systeme.io/aiarchus-to-business-ebook" target="_blank">
+
+                            Buy Now $3
+							 </a>
+                        </button>
+<button class="border border-outline text-primary px-8 py-3 rounded-lg font-semibold hover:bg-surface-variant transition-all">
+                            Read Sample
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- eBook Cards Grid -->
+<section class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter mb-stack-lg">
+<!-- Card 1 -->
+<div class="bg-white border border-outline-variant/30 rounded-2xl p-6 flex flex-col hover:shadow-xl transition-shadow duration-300">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 shadow-inner bg-surface-container">
+<img alt="Scaling AI Infrastructure cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_TkgHh4MQpJeareeI6qgXXDVv0uGmz2Sp1HYOom7okseq6Qn9xX5g-es4zNnsDp_hc29YdN-vd23H3ImWB3agMu6wGxDC2Wkf7Z5RUr9cqcrO4ZW7zGefBgMrulQdNSR2iQ84kk44EtCNFI1ksAlFlRf7ivUwxKgCw4XZDSmqv8M-mYUZnNXxFM3HlhuGtS2exmnQ1_jRZOYRfdx9rgbAF6p-R9dGGL7jC-DfqXbcHuqi3jV9PUw9RYTktCpmZeXZEJeTQSYkcw"/>
+</div>
+<h3 class="font-headline-md text-[20px] text-primary mb-2">Scaling AI Infrastructure</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-6 flex-grow">A deep dive into MLOps and GPU orchestration for enterprise environments.</p>
+<div class="flex justify-between items-center">
+<span class="font-mono-technical text-secondary font-bold">$3.99</span>
+<button class="text-secondary font-bold flex items-center gap-1 group">
+                        Buy Now
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white border border-outline-variant/30 rounded-2xl p-6 flex flex-col hover:shadow-xl transition-shadow duration-300">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 shadow-inner bg-surface-container">
+<img alt="The Data Mesh Handbook cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_TkgHh4MQpJeareeI6qgXXDVv0uGmz2Sp1HYOom7okseq6Qn9xX5g-es4zNnsDp_hc29YdN-vd23H3ImWB3agMu6wGxDC2Wkf7Z5RUr9cqcrO4ZW7zGefBgMrulQdNSR2iQ84kk44EtCNFI1ksAlFlRf7ivUwxKgCw4XZDSmqv8M-mYUZnNXxFM3HlhuGtS2exmnQ1_jRZOYRfdx9rgbAF6p-R9dGGL7jC-DfqXbcHuqi3jV9PUw9RYTktCpmZeXZEJeTQSYkcw"/>
+</div>
+<h3 class="font-headline-md text-[20px] text-primary mb-2">The Data Mesh Handbook</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-6 flex-grow">Decentralizing data ownership without sacrificing governance or quality.</p>
+<div class="flex justify-between items-center">
+<span class="font-mono-technical text-secondary font-bold">$3.99</span>
+<button class="text-secondary font-bold flex items-center gap-1 group">
+                        Buy Now
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white border border-outline-variant/30 rounded-2xl p-6 flex flex-col hover:shadow-xl transition-shadow duration-300">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 shadow-inner bg-surface-container">
+<img alt="Real-time Analytics at Scale cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_TkgHh4MQpJeareeI6qgXXDVv0uGmz2Sp1HYOom7okseq6Qn9xX5g-es4zNnsDp_hc29YdN-vd23H3ImWB3agMu6wGxDC2Wkf7Z5RUr9cqcrO4ZW7zGefBgMrulQdNSR2iQ84kk44EtCNFI1ksAlFlRf7ivUwxKgCw4XZDSmqv8M-mYUZnNXxFM3HlhuGtS2exmnQ1_jRZOYRfdx9rgbAF6p-R9dGGL7jC-DfqXbcHuqi3jV9PUw9RYTktCpmZeXZEJeTQSYkcw"/>
+</div>
+<h3 class="font-headline-md text-[20px] text-primary mb-2">Real-time Analytics at Scale</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-6 flex-grow">Mastering stream processing with Kafka, Flink, and Druid.</p>
+<div class="flex justify-between items-center">
+<span class="font-mono-technical text-secondary font-bold">
+$3.50</span>
+<button class="text-secondary font-bold flex items-center gap-1 group">
+<a class="bg-primary text-on-primary px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-on-surface-variant transition-all shrink-0" href="https://rajeshwari-kaki89.systeme.io/aiarchus-to-business-ebook" target="_blank">
+
+                        Buy Now
+						</a>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" >arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Certifications Gallery -->
+<section class="bg-surface-container py-16 mb-stack-lg">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-12">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-2 block">Verified Expertise</span>
+<h2 class="font-headline-md text-headline-md text-primary">Industry Certifications</h2>
+</div>
+<div class="flex flex-wrap justify-center gap-8 opacity-90">
+<!-- Badges -->
+<div class="w-40 h-44 flex flex-col items-center justify-center p-4 rounded-xl bg-white shadow-sm border border-outline-variant/30 group hover:border-secondary transition-all text-center">
+<div class="w-16 h-16 bg-surface-container rounded-full mb-3 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary">cloud_done</span>
+</div>
+<span class="text-[11px] font-bold leading-tight">AWS Solutions Architect – Professional (SAP-C02)</span>
+</div>
+<div class="w-40 h-44 flex flex-col items-center justify-center p-4 rounded-xl bg-white shadow-sm border border-outline-variant/30 group hover:border-secondary transition-all text-center">
+<div class="w-16 h-16 bg-surface-container rounded-full mb-3 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary">science</span>
+</div>
+<span class="text-[11px] font-bold leading-tight">Certified Data Scientist (EMCDSA)</span>
+</div>
+<div class="w-40 h-44 flex flex-col items-center justify-center p-4 rounded-xl bg-white shadow-sm border border-outline-variant/30 group hover:border-secondary transition-all text-center">
+<div class="w-16 h-16 bg-surface-container rounded-full mb-3 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary">cloud_done</span>
+</div>
+<span class="text-[11px] font-bold leading-tight">Azure Architect Expert</span>
+</div>
+<div class="w-40 h-44 flex flex-col items-center justify-center p-4 rounded-xl bg-white shadow-sm border border-outline-variant/30 group hover:border-secondary transition-all text-center">
+<div class="w-16 h-16 bg-surface-container rounded-full mb-3 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary">database</span>
+</div>
+<span class="text-[11px] font-bold leading-tight">SQL Certified</span>
+</div>
+
+</div>
+</div>
+</section>
+<!-- Resume & Profile Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-stack-lg" id="resume">
+<div class="lg:col-span-8">
+<div class="bg-white rounded-3xl border border-outline-variant/20 p-8 md:p-12 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Professional Summary</h2>
+<p class="font-body-md text-on-surface-variant">Principal Data Architect &amp; Certified Strategist with 12+ years of experience.</p>
+</div>
+<a class="bg-primary text-on-primary px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-on-surface-variant transition-all shrink-0" href="https://drive.google.com/file/d/1JFdMNmpVtZ5wkySgslmR7UsQdAYpyArM/view?usp=drive_link" target="_blank">
+<span class="material-symbols-outlined">download</span>
+                            Download Full Resume
+                        </a>
+</div>
+<!-- Resume Preview -->
+<a class="bg-surface-container-low rounded-2xl border-2 border-dashed border-outline-variant/50 p-12 text-center flex flex-col items-center justify-center hover:border-secondary transition-colors group relative overflow-hidden" href="https://drive.google.com/file/d/1JFdMNmpVtZ5wkySgslmR7UsQdAYpyArM/view?usp=drive_link" target="_blank">
+<div class="absolute inset-0 bg-white/40 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center">
+<div class="w-20 h-20 rounded-full bg-secondary-container/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-4xl">picture_as_pdf</span>
+</div>
+<h3 class="font-headline-md text-[20px] text-primary mb-2">Interactive Resume Preview</h3>
+<p class="font-body-md text-on-surface-variant mb-8 max-w-sm">View the latest career highlights, technical stack proficiency, and project portfolio.</p>
+<span class="bg-primary text-on-primary px-6 py-2 rounded-full text-sm font-bold">Click to Expand Full PDF</span>
+</div>
+<div class="w-full space-y-4 max-w-md opacity-20 select-none">
+<div class="h-4 bg-outline-variant rounded w-3/4 mx-auto"></div>
+<div class="h-4 bg-outline-variant rounded w-5/6 mx-auto"></div>
+<div class="h-4 bg-outline-variant rounded w-2/3 mx-auto"></div>
+<div class="h-4 bg-outline-variant rounded w-4/5 mx-auto"></div>
+<div class="h-20 bg-outline-variant rounded w-full"></div>
+<div class="h-4 bg-outline-variant rounded w-2/3 mx-auto"></div>
+<div class="h-4 bg-outline-variant rounded w-3/4 mx-auto"></div>
+</div>
+</a>
+</div>
+</div>
+<div class="lg:col-span-4 space-y-gutter">
+<!-- Profile Card -->
+<div class="bg-white rounded-3xl border border-outline-variant/20 overflow-hidden shadow-sm">
+<div class="h-24 bg-gradient-to-r from-primary-container to-secondary relative"></div>
+<div class="px-6 pb-8 -mt-10 relative z-10 text-center">
+<div class="w-20 h-20 rounded-2xl bg-white p-1 mx-auto mb-4 shadow-md">
+<div class="w-full h-full bg-surface-container rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-outline">person</span>
+</div>
+</div>
+<h3 class="font-headline-md text-[20px] text-primary">Kailas Pathi Kaki</h3>
+<p class="font-body-md text-sm text-on-surface-variant mb-6">Principal Data Architect</p>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="bg-surface-container rounded-xl p-3">
+<span class="block font-headline-md text-lg text-primary">20+</span>
+<span class="text-[10px] font-label-caps text-on-surface-variant uppercase">Years Exp</span>
+</div>
+<div class="bg-surface-container rounded-xl p-3">
+<span class="block font-headline-md text-lg text-primary">15+</span>
+<span class="text-[10px] font-label-caps text-on-surface-variant uppercase">Projects</span>
+</div>
+</div>
+<a class="w-full bg-[#0077b5] text-white py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity" href="https://www.linkedin.com/in/kailas-pathi-kaki-12935b48" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                            LinkedIn Profile
+                        </a>
+</div>
+</div>
+<!-- Status Card -->
+<div class="bg-primary-container text-white rounded-3xl p-6">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary/30 flex items-center justify-center">
+<div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+</div>
+<div>
+<span class="block font-label-caps text-[10px] text-on-primary-container uppercase tracking-widest">Available For</span>
+<span class="block font-body-md font-semibold">Architecture Audits</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-stack-lg" id="contact">
+<div class="bg-surface-container-highest rounded-[40px] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+<!-- Info Side -->
+<div class="p-12 lg:p-20 bg-primary-container text-white flex flex-col justify-between">
+<div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8">Let's build something precise.</h2>
+<p class="font-body-lg text-on-primary-container mb-12 max-w-md">Translate complex requirements into robust, AI-ready data architectures. Get in touch for strategy or implementation.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/20">
+<span class="material-symbols-outlined text-white">mail</span>
+</div>
+<div>
+<span class="block font-label-caps text-[10px] text-on-primary-container uppercase">Email Address</span>
+<a class="block font-body-md hover:text-secondary transition-colors" href="mailto:kk.pathi@gmail.com">kk.pathi@gmail.com</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/20">
+<span class="material-symbols-outlined text-white">call</span>
+</div>
+<div>
+<span class="block font-label-caps text-[10px] text-on-primary-container uppercase">Phone Number</span>
+<a class="block font-body-md hover:text-secondary transition-colors" href="tel:+919535000114">+91 9535000114</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/20">
+<span class="material-symbols-outlined text-white">location_on</span>
+</div>
+<div>
+<span class="block font-label-caps text-[10px] text-on-primary-container uppercase">Based In</span>
+<span class="block font-body-md">Hyderabad, India / Global Remote</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Side -->
+<div class="p-12 lg:p-20 bg-white">
+<form class="space-y-6" onsubmit="event.preventDefault();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Name</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-secondary focus:ring-4 focus:ring-secondary/10 rounded-xl px-4 py-3 transition-all outline-none" placeholder="Your Name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Email</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-secondary focus:ring-4 focus:ring-secondary/10 rounded-xl px-4 py-3 transition-all outline-none" placeholder="Your Email" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Message</label>
+<textarea class="w-full bg-surface-container-low border-transparent focus:border-secondary focus:ring-4 focus:ring-secondary/10 rounded-xl px-4 py-3 transition-all outline-none resize-none" placeholder="Project details or questions..." rows="4"></textarea>
+</div>
+<div class="pt-4 flex flex-col md:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex-1 hover:bg-on-surface-variant transition-colors shadow-lg active:scale-95 transform" type="submit">
+                                Send Message
+                            </button>
+<button class="border border-secondary text-secondary px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-secondary/5 transition-colors" type="button">
+<span class="material-symbols-outlined">calendar_today</span>
+                                Schedule Meeting
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-primary-container w-full py-stack-lg border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-8 md:mb-0 text-center md:text-left">
+<span class="font-label-caps text-label-caps tracking-widest text-primary block mb-2">Kailas Pathi Kaki</span>
+<p class="text-on-surface font-body-md opacity-80">© 2024 Data Architect. Engineered for Scale.</p>
+</div>
+<div class="flex gap-stack-md flex-wrap justify-center">
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80" href="#">Privacy</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80" href="mailto:kk.pathi@gmail.com">Email</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-all opacity-80" href="https://www.linkedin.com/in/kailas-pathi-kaki-12935b48">LinkedIn</a>
+</div>
+</div>
+</footer>
+<script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('header');
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                navbar.style.transform = 'translateY(0)';
+            }
+            if (scrollTop > 50) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body></html>

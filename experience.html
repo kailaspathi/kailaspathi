@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Geist:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "on-surface-variant": "#44474e",
+                            "secondary-fixed": "#dce1ff",
+                            "on-secondary-fixed-variant": "#264191",
+                            "error-container": "#ffdad6",
+                            "on-primary": "#ffffff",
+                            "inverse-primary": "#b1c7f2",
+                            "secondary-fixed-dim": "#b6c4ff",
+                            "tertiary": "#000000",
+                            "surface-dim": "#dbd9dd",
+                            "inverse-surface": "#303033",
+                            "primary": "#000000",
+                            "background": "#faf9fc",
+                            "secondary-container": "#8fa7fe",
+                            "surface-container-highest": "#e3e2e5",
+                            "on-tertiary-fixed-variant": "#6b3a24",
+                            "on-tertiary-fixed": "#351001",
+                            "on-error": "#ffffff",
+                            "on-tertiary": "#ffffff",
+                            "on-background": "#1b1b1e",
+                            "surface-container": "#efedf1",
+                            "primary-container": "#001b3d",
+                            "on-primary-fixed-variant": "#31476b",
+                            "primary-fixed-dim": "#b1c7f2",
+                            "surface-variant": "#e3e2e5",
+                            "on-tertiary-container": "#b2755b",
+                            "surface-container-high": "#e9e7eb",
+                            "on-secondary-container": "#1d3989",
+                            "surface": "#faf9fc",
+                            "surface-bright": "#faf9fc",
+                            "on-secondary": "#ffffff",
+                            "on-surface": "#1b1b1e",
+                            "error": "#ba1a1a",
+                            "inverse-on-surface": "#f2f0f3",
+                            "on-secondary-fixed": "#00164e",
+                            "on-primary-container": "#6f84ac",
+                            "surface-tint": "#495f84",
+                            "on-error-container": "#93000a",
+                            "tertiary-fixed": "#ffdbcd",
+                            "tertiary-container": "#351001",
+                            "surface-container-low": "#f5f3f6",
+                            "on-primary-fixed": "#001b3d",
+                            "tertiary-fixed-dim": "#fdb698",
+                            "surface-container-lowest": "#ffffff",
+                            "primary-fixed": "#d6e3ff",
+                            "outline-variant": "#c4c6cf",
+                            "outline": "#74777f",
+                            "secondary": "#4059aa"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "stack-md": "24px",
+                            "margin-mobile": "16px",
+                            "margin-desktop": "48px",
+                            "unit": "4px",
+                            "gutter": "24px",
+                            "container-max": "1280px",
+                            "stack-sm": "8px",
+                            "stack-lg": "48px"
+                        },
+                        "fontFamily": {
+                            "body-lg": ["Inter"],
+                            "mono-technical": ["Geist"],
+                            "headline-md": ["Geist"],
+                            "body-md": ["Inter"],
+                            "display-lg": ["Geist"],
+                            "label-caps": ["Geist"],
+                            "display-lg-mobile": ["Geist"]
+                        },
+                        "fontSize": {
+                            "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                            "mono-technical": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                            "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400"}],
+                            "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                            "display-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-white/20 shadow-sm h-20 transition-all duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-full">
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="font-headline-md text-headline-md font-bold text-primary-container">Kailas Pathi Kaki</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="home.html">Home</a>
+<a class="font-body-md text-body-md font-medium text-secondary dark:text-secondary-fixed border-b-2 border-secondary pb-1" href="#">Experience</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="projects.html">Skills/Projects</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="publications.html">Publications</a>
+</div>
+<a class="bg-primary-container text-on-primary px-6 py-2.5 rounded-lg font-medium hover:bg-slate-800 transition-all active:scale-95 shadow-sm inline-block" href="https://drive.google.com/file/d/1JFdMNmpVtZ5wkySgslmR7UsQdAYpyArM/view?usp=drive_link" target="_blank">Download Resume</a>
+</div>
+</nav>
+<main class="pt-32 pb-stack-lg">
+<!-- Hero Section / About Me -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-stack-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 space-y-stack-md">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Senior Leadership &amp; Vision</span>
+<h1 class="font-display-lg text-display-lg text-primary leading-tight">Architecting the future of <span class="text-secondary">Intelligent Data.</span></h1>
+<div class="space-y-4 max-w-2xl">
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        With over 20 years of experience in Data Architecture, Cloud Computing, and AI/ML, I have spent my career at the leading edge of technical transformation. I specialize in designing and scaling complex data ecosystems that turn information into strategic enterprise leverage.
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        My core philosophy centers on <strong>Technical Rigor x Business Utility</strong>. I lead high-impact teams to build resilient, AI-ready platforms—from massive cloud migrations to production-grade Generative AI implementations.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-4 pt-4">
+<div class="glass-card px-4 py-2 rounded-full border border-outline-variant/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-size: 20px;">memory</span>
+<span class="font-mono-technical text-mono-technical">Enterprise RAG</span>
+</div>
+<div class="glass-card px-4 py-2 rounded-full border border-outline-variant/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-size: 20px;">cloud</span>
+<span class="font-mono-technical text-mono-technical">Multi-Cloud Migration</span>
+</div>
+<div class="glass-card px-4 py-2 rounded-full border border-outline-variant/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-size: 20px;">account_tree</span>
+<span class="font-mono-technical text-mono-technical">Lakehouse Mesh</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-[32px] overflow-hidden shadow-2xl relative z-10">
+<img alt="Kailas Pathi Kaki Professional Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQIupXF2Bv3tD9Ol4t6gBQSeejHIJh_C2h8bEsANBvgBhmpupIOIXLSDl4EfObSoVJY7SUzAcNF_7NEd31Ep4HdRMiok6N4JErWEDKRcH5mhmx1OuS4DkVygWHkT2_6NfQAznFGCFAnkKyLe7zYV0tiCvcJPiJJl0EN9ti5yxm7XOhcGdSO4bJS85wSPKCKWlY3fgtR_dvsmRksdegTMle8btWxQN_ZMSNW25YbQyaPBGBKlgglDzEH4ITxUtk1VbM63u5Gx_JXA"/>
+</div>
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Experience Timeline -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-stack-lg">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-md text-headline-md mb-2">Professional Trajectory</h2>
+<div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="relative">
+<!-- Center Line -->
+<div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-outline-variant/30 transform md:-translate-x-1/2"></div>
+<div class="space-y-stack-lg relative">
+<!-- Role 1: Apexon -->
+<div class="flex flex-col md:flex-row items-center w-full group">
+<div class="w-full md:w-1/2 md:pr-12 md:text-right">
+<div class="glass-card p-stack-md rounded-[24px] inner-glow transition-transform duration-300 group-hover:scale-[1.02]">
+<span class="font-label-caps text-label-caps text-secondary">DEC 2022 – PRESENT</span>
+<h3 class="font-headline-md text-headline-md mt-1">Lead Data Architect</h3>
+<p class="font-mono-technical text-mono-technical text-on-surface-variant mb-4">Apexon India Pvt. Ltd</p>
+<ul class="text-left md:text-right space-y-2 text-on-surface-variant font-body-md">
+<li>• Leading large-scale data modernization initiatives for Fortune 500 clients.</li>
+<li>• Architecting AI-driven data platforms and modern Lakehouse solutions.</li>
+<li>• Driving technical strategy and delivery for multi-cloud data migrations.</li>
+</ul>
+</div>
+</div>
+<div class="absolute left-4 md:left-1/2 w-4 h-4 bg-primary-container rounded-full border-4 border-background transform -translate-x-1/2 z-20"></div>
+<div class="hidden md:block w-1/2"></div>
+</div>
+<!-- Role 2: Infosys / MassMutual -->
+<div class="flex flex-col md:flex-row items-center w-full group">
+<div class="hidden md:block w-1/2"></div>
+<div class="absolute left-4 md:left-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-background transform -translate-x-1/2 z-20"></div>
+<div class="w-full md:w-1/2 md:pl-12">
+<div class="glass-card p-stack-md rounded-[24px] inner-glow transition-transform duration-300 group-hover:scale-[1.02]">
+<span class="font-label-caps text-label-caps text-secondary">FEB 2020 – JUN 2022</span>
+<h3 class="font-headline-md text-headline-md mt-1">Senior Data Architect</h3>
+<p class="font-mono-technical text-mono-technical text-on-surface-variant mb-4">Infosys & MassMutual </p>
+<ul class="space-y-2 text-on-surface-variant font-body-md">
+<li>• Led the data architectural roadmap for complex financial systems.</li>
+<li>• Modernized legacy data estates to high-performance cloud environments.</li>
+<li>• Implemented governance frameworks for enterprise-wide data integrity.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Role 3: HFI -->
+<div class="flex flex-col md:flex-row items-center w-full group">
+<div class="w-full md:w-1/2 md:pr-12 md:text-right">
+<div class="glass-card p-stack-md rounded-[24px] inner-glow transition-transform duration-300 group-hover:scale-[1.02]">
+<span class="font-label-caps text-label-caps text-secondary">JUN 2018 – JAN 2020</span>
+<h3 class="font-headline-md text-headline-md mt-1">Senior Data Solutions Lead</h3>
+<p class="font-mono-technical text-mono-technical text-on-surface-variant mb-4">Healthcare Financials Inc. (HFI)</p>
+<ul class="text-left md:text-right space-y-2 text-on-surface-variant font-body-md">
+<li>• Designed data-centric architectures supporting UX research and global analytics.</li>
+<li>• Scaled data processing capabilities for high-concurrency applications.</li>
+</ul>
+</div>
+</div>
+<div class="absolute left-4 md:left-1/2 w-4 h-4 bg-primary-container rounded-full border-4 border-background transform -translate-x-1/2 z-20"></div>
+<div class="hidden md:block w-1/2"></div>
+</div>
+<!-- Role 4: Amazon -->
+<div class="flex flex-col md:flex-row items-center w-full group">
+<div class="hidden md:block w-1/2"></div>
+<div class="absolute left-4 md:left-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-background transform -translate-x-1/2 z-20"></div>
+<div class="w-full md:w-1/2 md:pl-12">
+<div class="glass-card p-stack-md rounded-[24px] inner-glow transition-transform duration-300 group-hover:scale-[1.02]">
+<span class="font-label-caps text-label-caps text-secondary">APR 2017 – JUN 2018</span>
+<h3 class="font-headline-md text-headline-md mt-1">Data Engineer II</h3>
+<p class="font-mono-technical text-mono-technical text-on-surface-variant mb-4">Amazon India Pvt. Ltd</p>
+<ul class="space-y-2 text-on-surface-variant font-body-md">
+<li>• Developed robust ETL pipelines for large-scale e-commerce datasets.</li>
+<li>• Optimized Redshift performance for complex analytical queries.</li>
+<li>• Engineered data solutions for real-time supply chain monitoring.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Role 5: EMC2 -->
+<div class="flex flex-col md:flex-row items-center w-full group">
+<div class="w-full md:w-1/2 md:pr-12 md:text-right">
+<div class="glass-card p-stack-md rounded-[24px] inner-glow transition-transform duration-300 group-hover:scale-[1.02]">
+<span class="font-label-caps text-label-caps text-secondary">2009 – 2017</span>
+<h3 class="font-headline-md text-headline-md mt-1">Senior Advisor, Data</h3>
+<p class="font-mono-technical text-mono-technical text-on-surface-variant mb-4">EMC² (Dell Technologies)</p>
+<ul class="text-left md:text-right space-y-2 text-on-surface-variant font-body-md">
+<li>• Led development for enterprise storage management software.</li>
+<li>• Specialized in database optimization and high-availability systems.</li>
+<li>• Drove architectural standards across global engineering teams.</li>
+</ul>
+</div>
+</div>
+<div class="absolute left-4 md:left-1/2 w-4 h-4 bg-primary-container rounded-full border-4 border-background transform -translate-x-1/2 z-20"></div>
+<div class="hidden md:block w-1/2"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Philosophy -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="space-y-stack-md">
+<h2 class="font-headline-md text-headline-md border-l-4 border-secondary pl-4">Education</h2>
+<div class="glass-card p-6 rounded-xl flex gap-6 items-start">
+<div class="bg-primary-container/10 p-3 rounded-lg">
+<span class="material-symbols-outlined text-primary-container" style="font-size: 32px;">school</span>
+</div>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold">B. Tech in Computer Science</h4>
+<p class="text-on-surface-variant">Jawaharlal Nehru Technological University (JNTU)</p>
+<p class="font-label-caps text-label-caps text-outline mt-2">GRADUATED WITH DISTINCTION</p>
+</div>
+</div>
+<div class="glass-card p-6 rounded-xl flex gap-6 items-start">
+<div class="bg-primary-container/10 p-3 rounded-lg">
+<span class="material-symbols-outlined text-primary-container" style="font-size: 32px;">history_edu</span>
+</div>
+
+</div>
+</div>
+<div class="space-y-stack-md">
+<h2 class="font-headline-md text-headline-md border-l-4 border-secondary pl-4">Core Philosophy</h2>
+<div class="bg-primary-container p-stack-md rounded-[24px] text-on-primary shadow-xl relative overflow-hidden h-full flex flex-col justify-center">
+<p class="font-body-lg italic relative z-10">
+                        "In an era of ubiquitous data, the true challenge is not collection, but synthesis. We must architect systems where technical rigor meets business utility, ensuring that every byte serves a purpose and every model drives an outcome."
+                    </p>
+<div class="mt-6 flex items-center gap-4 relative z-10">
+<div class="w-10 h-10 rounded-full bg-secondary"></div>
+<span class="font-mono-technical">The Architect's Creed</span>
+</div>
+<div class="absolute -right-20 -bottom-20 w-64 h-64 border border-white/10 rounded-full opacity-20"></div>
+<div class="absolute -right-10 -bottom-10 w-48 h-48 border border-white/10 rounded-full opacity-20"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/30 w-full py-stack-lg">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-8 md:mb-0">
+<span class="font-label-caps text-label-caps tracking-widest text-primary">KAILAS PATHI KAKI</span>
+<p class="text-on-surface-variant mt-2">© 2024 Kailas Pathi Kaki. Engineered for Precision.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="https://www.linkedin.com/in/kailas-pathi-k-12935b48" target="_blank">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all opacity-80 hover:opacity-100" href="mailto:kk.pathi@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+<script>
+    // Simple scroll reveal effect for cards
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.glass-card').forEach(card => {
+        card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+        observer.observe(card);
+    });
+
+    // Header transparency shift on scroll
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 20) {
+            nav.classList.add('h-16', 'bg-surface/95', 'shadow-md');
+            nav.classList.remove('h-20', 'bg-surface/80');
+        } else {
+            nav.classList.add('h-20', 'bg-surface/80');
+            nav.classList.remove('h-16', 'bg-surface/95', 'shadow-md');
+        }
+    });
+</script>
+</body></html>
